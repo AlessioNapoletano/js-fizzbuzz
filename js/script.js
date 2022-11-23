@@ -16,14 +16,14 @@ for (let i = 0; i < 100; i++) {
     console.log(numero);
 
     if (numero % 3 === 0 && numero % 5 === 0) {
-        elemento.innerHTML += '<p> FizzBuzz </p>'
-    } else if(numero % 3 === 0){
-        elemento.innerHTML += '<p> Fizz </p>'
-    } else if(numero % 5 === 0){
-        elemento.innerHTML += '<p> Buzz </p>'
+        elemento.innerHTML += '<p class="font-red"> FizzBuzz </p>';
+    } else if (numero % 3 === 0) {
+        elemento.innerHTML += '<p class="font-green"> Fizz </p>';
+    } else if (numero % 5 === 0) {
+        elemento.innerHTML += '<p class="font-darkblue"> Buzz </p>';
     } else {
-        elemento.innerHTML += '<p> ' + numero +  '</p>'
+        elemento.innerHTML += '<p> ' + numero + '</p>';
     }
-    
+
 }
 

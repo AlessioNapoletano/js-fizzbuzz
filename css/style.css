@@ -1,5 +1,17 @@
 *{
     margin: 0;
     padding: 0;
-    
+
+}
+
+.font-red{
+    color: red;
+}
+
+.font-green{
+    color: green;
+}
+
+.font-darkblue{
+    color: darkblue;
 }
