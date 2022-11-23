@@ -7,22 +7,22 @@ CONSIGLI:
     - Scrivere i commenti in Italiano
 */
 
-const elemento = document.getElementById("demo");
+const element = document.getElementById("demo");
 
-let numero = 0;
+let number = 0;
 
 for (let i = 0; i < 100; i++) {
-    numero++;
-    console.log(numero);
+    number++;
+    console.log(number);
 
-    if (numero % 3 === 0 && numero % 5 === 0) {
-        elemento.innerHTML += '<p class="font-red"> FizzBuzz </p>';
-    } else if (numero % 3 === 0) {
-        elemento.innerHTML += '<p class="font-green"> Fizz </p>';
-    } else if (numero % 5 === 0) {
-        elemento.innerHTML += '<p class="font-darkblue"> Buzz </p>';
+    if (number % 3 === 0 && number % 5 === 0) {
+        element.innerHTML += '<p class="font-red"> FizzBuzz </p>';
+    } else if (number % 3 === 0) {
+        element.innerHTML += '<p class="font-green"> Fizz </p>';
+    } else if (number % 5 === 0) {
+        element.innerHTML += '<p class="font-darkblue"> Buzz </p>';
     } else {
-        elemento.innerHTML += '<p> ' + numero + '</p>';
+        element.innerHTML += '<p class="font-orange"> ' + number + '</p>';
     }
 
 }
