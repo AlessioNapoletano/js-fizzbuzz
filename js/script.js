@@ -11,18 +11,17 @@ const element = document.getElementById("demo");
 
 let number = 0;
 
-for (let i = 0; i < 100; i++) {
-    number++;
-    console.log(number);
+for (let i = 1; i <= 100; i++) {
+    console.log(i);
 
-    if (number % 3 === 0 && number % 5 === 0) {
+    if (i % 3 === 0 && number % 5 === 0) {
         element.innerHTML += '<p class="font-red"> FizzBuzz </p>';
-    } else if (number % 3 === 0) {
+    } else if (i % 3 === 0) {
         element.innerHTML += '<p class="font-green"> Fizz </p>';
-    } else if (number % 5 === 0) {
+    } else if (i % 5 === 0) {
         element.innerHTML += '<p class="font-darkblue"> Buzz </p>';
     } else {
-        element.innerHTML += '<p class="font-orange"> ' + number + '</p>';
+        element.innerHTML += '<p class="font-orange"> ' + i + '</p>';
     }
 
 }
