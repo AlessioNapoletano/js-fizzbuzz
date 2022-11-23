@@ -9,8 +9,6 @@ CONSIGLI:
 
 const element = document.getElementById("demo");
 
-let number = 0;
-
 for (let i = 1; i <= 100; i++) {
     console.log(i);
 
