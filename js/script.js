@@ -9,11 +9,21 @@ CONSIGLI:
 
 const elemento = document.getElementById("demo");
 
-for(let i=0 ; i<100; i++){
-    let numero;
+let numero = 0;
+
+for (let i = 0; i < 100; i++) {
     numero++;
     console.log(numero);
-    elemento.innerHTML += '
-    <p> ciao </p>
-    ';
+
+    if (numero % 3 === 0 && numero % 5 === 0) {
+        elemento.innerHTML += '<p> FizzBuzz </p>'
+    } else if(numero % 3 === 0){
+        elemento.innerHTML += '<p> Fizz </p>'
+    } else if(numero % 5 === 0){
+        elemento.innerHTML += '<p> Buzz </p>'
+    } else {
+        elemento.innerHTML += '<p> ' + numero +  '</p>'
+    }
+    
 }
+
